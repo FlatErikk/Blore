@@ -35,7 +35,7 @@ public class MainMenu implements Screen {
 
     public MainMenu(final Blore game){
         this.game = game;
-        Assets.load();
+        Assets.loadMainMenu();
 
         Gdx.graphics.setWindowedMode(Assets.screenWidth,
                 Assets.screenHeight);
@@ -252,6 +252,11 @@ public class MainMenu implements Screen {
         startButton.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
+                GameScreen gs = new GameScreen(game);
+                //stage.dispose();
+                game.setScreen(gs);
+
+                Gdx.app.log("qwklethjlk","lköwetujh");
 
                 super.clicked(event, x, y);
             }

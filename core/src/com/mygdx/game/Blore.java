@@ -20,4 +20,5 @@ public class Blore extends Game {
 	public void dispose () {
 	}
 
+
 }

@@ -6,13 +6,13 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 
 public class Assets {
-    public static TextureAtlas menuButtons;
-    public static BitmapFont asgard;
-    public static Preferences settings;
-    public static float sound;
-    public static int screenWidth, screenHeight;
+    static TextureAtlas menuButtons;
+    static BitmapFont asgard;
+    static Preferences settings;
+    static float sound;
+    static int screenWidth, screenHeight;
 
-    public static void load(){
+    static void loadMainMenu(){
         menuButtons = new TextureAtlas(Gdx.files.internal("menuButtons.atlas"));
         asgard = new BitmapFont(Gdx.files.internal("asgard.fnt"));
 
